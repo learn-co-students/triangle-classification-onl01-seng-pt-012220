@@ -7,11 +7,11 @@ class Triangle
   end
 
   def not_triangle
-    if ((self.length_1 + self.length_2)< self.length_3) or ((self.length_1 + self.length_3) < self.length_2) or ((self.length2 + self.length_3) < self.length_1)
+    if ((@length_1 + @length_2)<= @length_3) or ((@length_1 + @length_3) <= @length_2) or ((@length_2 + @length_3) <= @length_1)
       false
-    elsif ((self.length_1 == 0) or (self.length2 ==0) or (self.length3 ==0))
+    elsif ((@length_1 == 0) or (@length_2 ==0) or (@length_3 ==0))
       false
-    elsif ((self.length_1 == 0) or (self.length_2 == 0) or (self.length3 == 0))
+    elsif ((@length_1 == 0) or (@length_2 == 0) or (@length_3 == 0))
       false
     else 
       true
